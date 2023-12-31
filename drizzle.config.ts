@@ -9,8 +9,8 @@ const {
 } = process.env
 
 const config = {
-  schema: "./db/schema/*",
-  out: "./db/migrations",
+  schema: "./src/db/schema/*",
+  out: "./src/db/migrations",
   dbCredentials:
     DATABASE_INFRA === "planetscale"
       ? {
