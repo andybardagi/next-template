@@ -1,7 +1,7 @@
 // Remove this file
 
-import { mysqlTable, varchar } from "drizzle-orm/mysql-core"
+import { sqliteTable, text } from "drizzle-orm/sqlite-core"
 
-export const exampleTable = mysqlTable("db_table_name", {
-  column1: varchar("db_column_name", { length: 255 }).primaryKey(),
+export const exampleTable = sqliteTable("db_table_name", {
+  column1: text("db_column_name", { length: 255 }).primaryKey(),
 })
